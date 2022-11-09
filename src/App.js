@@ -1,5 +1,7 @@
 import React from "react";
 import CaughtPokemon from "./CaughtPokemon";
+import PokemonMovesSelector from "./PokemonMovesSelector";
+import PokemonCity from "./PokemonCity";
 import Logo from "./Logo";
 import BestPokemon from "./BestPokemon";
 import ButtonComponent from "./ButtonComponent";
@@ -20,6 +22,8 @@ function App() {
       <Logo appName="Pokedex" handleClicked={logWhenClicked} />
       <BestPokemon abilities={abilities} />
       <CaughtPokemon />
+      <PokemonMovesSelector />
+      <PokemonCity />
       <button onClick={buttonClicked}>Click me</button>
       <ButtonComponent buttonClicked={buttonClicked} />
     </div>
